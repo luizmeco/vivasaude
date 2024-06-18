@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Viva Saúde</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .card-img-top {
+        margin: 0px;
+        max-height: 300px;
+      }
+
+      .cards {
+        margin-bottom: 50px;
+      }
+
+      .card {
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.486);
+        border-radius: 10px;
+      }
+      body {
+        background-image: url(./img/background.avif);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+      #titulo {
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 10px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        background-color: rgb(211, 246, 255);
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.486);
+      }
+      .btn:hover {
+        background-color: rgb(211, 246, 255);
+        color: #005154;
+        border-color: #005154;
+      }
+      .btn {
+        border-color: rgb(0, 204, 255);
+        color: rgb(0, 204, 255);
+      }
+
+      #logo {
+        max-width: 40px;
+      }
+      h1,
+      h2 {
+        color: #005154;
+      }
+
+      @media (max-width: 1000px) {
+        .apresentacao {
+          display: flex;
+          flex-direction: column;
+          max-width: 100%;
+          align-items: center;
+        }
+        .text-ap {
+          width: 600px;
+        }
+        .card-1 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+        .descricao {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+        .text-desc-1 {
+          align-items: center;
+          text-align: center;
+        }
+        iframe {
+          width: 600px;
+        }
+        img {
+          max-width: 600px;
+          max-height: 600px;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="">
+    <header style="margin-bottom: 5rem">
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+          <a href="#" class="navbar-brand">
+            <img src="./img/logo.png" id="logo" />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#barraOculta"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="barraOculta">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="#busca" class="nav-link">Busca em tempo real</a>
+              </li>
+              <li class="nav-item">
+                <a href="#dengue" class="nav-link">Dengue</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contatos" class="nav-link">Contatos</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="btn btn-outline-primary">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="d-flex justify-content-center">
+      <section class="col-md-10">
+        <div
+          style="margin-bottom: 5rem"
+          class="apresentacao d-flex justify-content-around"
+        >
+          <div class="text-ap row col-md-4 align-items-center">
+            <h1>Viva Saúde</h1>
+            <p style="font-size: 20px">
+              Este projeto propõe o desenvolvimento de um sistema web com a
+              possibilidade de ser agregado ao site da Prefeitura Municipal de
+              Panambi, focado na otimização dos serviços de saúde no município
+              de Panambi, visando facilitar o acesso à informações sobre os
+              postos de saúde de cada região de Panambi.
+            </p>
+          </div>
+          <img style="max-width: 400px" src="./img/logo.png" alt="" />
+        </div>
+        <div style="margin-top: 5rem" class="cards">
+          <div class="container text-center">
+            <div id="titulo">
+              <h1>Como posso te ajudar?</h1>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+              <div class="col-sm-12">
+                <div
+                id="busca"
+                  style="margin-bottom: 5rem"
+                  class="card-1  card d-flex flex-row justify-content-around align-items-center"
+                >
+                  <div style="width: 100%;" class="descricao d-flex align-items-center justify-content-around">
+                    <div class="text-desc text-center">
+                      <h2 >Busca em tempo real</h2>
+                      <p style="font-size: 25px; max-width: 300px">
+                        Você pode pesquisar o posto de sáude que seu endereço
+                        pertence no mapa ao lado
+                      </p>
+                      <img  src="./img/local.png" alt="" style="width: 100px" />
+                    </div>
+                    <iframe
+                      src="https://www.google.com/maps/d/embed?mid=1MsQFuT-4A32WHB0tzSHCdfVkt2TE7Ls&ehbc=2E312F"
+                      width="700"
+                      height="700"
+                      style="
+                        border-radius: 15px;
+                        margin-top: 1rem;
+                        margin-bottom: 1rem;
+                      "
+                    ></iframe>
+                  </div>
+                </div>
+                <div
+                id="dengue"
+                  style="margin-bottom: 5rem"
+                  class="card-1 card d-flex flex-row justify-content-around align-items-center"
+                >
+                  <div style="width: 100%;" class="descricao d-flex align-items-center justify-content-around">
+                    <div
+                      class="text-desc d-flex flex-column justify-content-center align-items-center"
+                    >
+                      <h2>Prevenção contra a dengue</h2>
+                      <p style="font-size: 25px; max-width: 300px">
+                        Você pode pesquisar o posto de sáude que seu endereço
+                        pertence no mapa ao lado
+                      </p>
+                      <img
+                        src="./img/mosquito.png"
+                        alt=""
+                        style="width: 100px"
+                      />
+                    </div>
+                    <img
+                      style="border-radius: 15px"
+                      width="700"
+                      height="700"
+                      src="./img/dengue.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div
+                id="contatos"
+                  class="card-1 card d-flex flex-row justify-content-around align-items-center"
+                >
+                  <div style="width: 100%;" class="descricao d-flex align-items-center justify-content-around">
+                    <div
+                      class="text-desc d-flex flex-column justify-content-center align-items-center"
+                    >
+                      <h2>Prevenção o covid-19</h2>
+                      <p style="font-size: 25px; max-width: 300px">
+                        Você pode pesquisar o posto de sáude que seu endereço
+                        pertence no mapa ao lado
+                      </p>
+                      <img src="./img/virus.png" alt="" style="width: 100px" />
+                    </div>
+                    <img
+                      style="border-radius: 15px"
+                      width="700"
+                      height="700"
+                      src="./img/dengue.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
