@@ -10,12 +10,17 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/71987d4022.js"
+      crossorigin="anonymous"
+    ></script>
 
     <style>
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        text-decoration: none;
       }
       .card-img-top {
         margin: 0px;
@@ -70,6 +75,18 @@
       h1,
       h2 {
         color: #005154;
+      }
+      i {
+        text-decoration: none;
+        color: #005154;
+      }
+      .btn-cnt {
+        justify-content: center;
+        text-align: center;
+        width: 500px;
+        height: 200px;
+        color: #005154;
+        font-size: 70px;
       }
 
       @media (max-width: 1000px) {
@@ -171,18 +188,21 @@
             <div class="d-flex flex-column align-items-center">
               <div class="col-sm-12">
                 <div
-                id="busca"
+                  id="busca"
                   style="margin-bottom: 5rem"
-                  class="card-1  card d-flex flex-row justify-content-around align-items-center"
+                  class="card-1 card d-flex flex-row justify-content-around align-items-center"
                 >
-                  <div style="width: 100%;" class="descricao d-flex align-items-center justify-content-around">
+                  <div
+                    style="width: 100%"
+                    class="descricao d-flex align-items-center justify-content-around"
+                  >
                     <div class="text-desc text-center">
-                      <h2 >Busca em tempo real</h2>
+                      <h2>Busca em tempo real</h2>
                       <p style="font-size: 25px; max-width: 300px">
                         Você pode pesquisar o posto de sáude que seu endereço
                         pertence no mapa ao lado
                       </p>
-                      <img  src="./img/local.png" alt="" style="width: 100px" />
+                      <img src="./img/local.png" alt="" style="width: 100px" />
                     </div>
                     <iframe
                       src="https://www.google.com/maps/d/embed?mid=1MsQFuT-4A32WHB0tzSHCdfVkt2TE7Ls&ehbc=2E312F"
@@ -197,18 +217,21 @@
                   </div>
                 </div>
                 <div
-                id="dengue"
+                  id="dengue"
                   style="margin-bottom: 5rem"
                   class="card-1 card d-flex flex-row justify-content-around align-items-center"
                 >
-                  <div style="width: 100%;" class="descricao d-flex align-items-center justify-content-around">
+                  <div
+                    style="width: 100%"
+                    class="descricao d-flex align-items-center justify-content-around"
+                  >
                     <div
                       class="text-desc d-flex flex-column justify-content-center align-items-center"
                     >
                       <h2>Prevenção contra a dengue</h2>
                       <p style="font-size: 25px; max-width: 300px">
-                        Você pode pesquisar o posto de sáude que seu endereço
-                        pertence no mapa ao lado
+                        Confira alguns cuidados para evitarmos a ploriferação do
+                        mosquito da dengue.
                       </p>
                       <img
                         src="./img/mosquito.png"
@@ -225,28 +248,99 @@
                     />
                   </div>
                 </div>
-                <div
-                id="contatos"
-                  class="card-1 card d-flex flex-row justify-content-around align-items-center"
-                >
-                  <div style="width: 100%;" class="descricao d-flex align-items-center justify-content-around">
-                    <div
-                      class="text-desc d-flex flex-column justify-content-center align-items-center"
-                    >
-                      <h2>Prevenção o covid-19</h2>
-                      <p style="font-size: 25px; max-width: 300px">
-                        Você pode pesquisar o posto de sáude que seu endereço
-                        pertence no mapa ao lado
-                      </p>
-                      <img src="./img/virus.png" alt="" style="width: 100px" />
+                <div style="height: 800px" id="contatos" class="card-1">
+                  <div id="titulo">
+                    <h1>Para entrar em contato com seu ESF basta clicar!</h1>
+                  </div>
+                  <div class="cards d-flex flex-column justify-content-around">
+                    <div class="d-flex">
+                      <div class="btn-cnt card">
+                        <h1>ESF Centro</h1>
+                        <a href="https://wa.me/5555991278841?"
+                          ><i class="fa-brands fa-whatsapp"></i
+                        ></a>
+                      </div>
+                      <div class="btn-cnt card">
+                        <h1>ESF Alvis Klasener</h1>
+                        <a href="https://wa.me/5555991279973?"
+                          ><i class="fa-brands fa-whatsapp"></i
+                        ></a>
+                      </div>
+                      <div class="btn-cnt card">
+                        <h1>ESF Arco Íris</h1>
+                        <a href="https://wa.me/5555991275623?"
+                          ><i class="fa-brands fa-whatsapp"></i
+                        ></a>
+                      </div>
+                      <div class="btn-cnt card">
+                        <h1>ESF Doze de Outubro</h1>
+                        <a href="https://wa.me/5555991281869?"
+                          ><i class="fa-brands fa-whatsapp"></i
+                        ></a>
+                      </div>
                     </div>
-                    <img
-                      style="border-radius: 15px"
-                      width="700"
-                      height="700"
-                      src="./img/dengue.jpg"
-                      alt=""
-                    />
+                    <div class="d-flex">
+                      <div class="btn-cnt card">
+                        <h1>ESF Esperança</h1>
+                        <a href="https://wa.me/5555991276918?"
+                          ><i class="fa-brands fa-whatsapp"></i
+                        ></a>
+                      </div>
+                      <div class="btn-cnt card">
+                        <h1>ESF Fensterseifer</h1>
+                        <a href="https://wa.me/5555991278921?"
+                          ><i class="fa-brands fa-whatsapp"></i
+                        ></a>
+                      </div>
+                      <div class="btn-cnt card">
+                        <h1>ESF Interior</h1>
+                        <a href="https://wa.me/5555991282909?"
+                          ><i class="fa-brands fa-whatsapp"></i
+                        ></a>
+                      </div>
+                      <div class="btn-cnt card">
+                        <h1>ESF Italiana</h1>
+                        <a href="https://wa.me/5555991276095?"
+                          ><i class="fa-brands fa-whatsapp"></i
+                        ></a>
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="btn-cnt card">
+                        <h1>ESF Piratini</h1>
+                        <a href="https://wa.me/5555991291276?"
+                          ><i class="fa-brands fa-whatsapp"></i
+                        ></a>
+                      </div>
+                      <div class="btn-cnt card">
+                        <h1>ESF São Jorge</h1>
+                        <a href="https://wa.me/5555991279815?"
+                          ><i class="fa-brands fa-whatsapp"></i
+                        ></a>
+                      </div>
+                      <div class="btn-cnt card">
+                        <h1>ESF Zona Norte</h1>
+                        <a href="https://wa.me/5555991281653?"
+                          ><i class="fa-brands fa-whatsapp"></i
+                        ></a>
+                      </div>
+                      <div class="btn-cnt card">
+                        <h1>ESF Alto Paraíso</h1>
+                        <a href="https://wa.me/5555991279411?"
+                          ><i class="fa-brands fa-whatsapp"></i
+                        ></a>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                      <div class="d-flex">
+                        <div class="btn-cnt card">
+                          <h1>UBS Armindo João</h1>
+                          <a href="https://wa.me/5555991016526?"
+                            ><i class="fa-brands fa-whatsapp"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
